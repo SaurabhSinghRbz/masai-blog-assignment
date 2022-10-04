@@ -11,7 +11,19 @@ app.use(express.json());
 
 
 app.get('/', (req, res) => {
-    return res.send('Hello World!');
+    return res.send({
+        message: 'Welcome to my blog API',
+        registration: 'https://saurabh-blog-api.herokuapp.com/api/auth/register',
+        login: 'https://saurabh-blog-api.herokuapp.com/api/auth/login',
+        getAllUsers: "httpd://saurabh-blog-api.herokuapp.com/api/users",
+        getUserById: "httpd://saurabh-blog-api.herokuapp.com/api/users/:id",
+        updateUser: "httpd://saurabh-blog-api.herokuapp.com/api/users/:id",
+        getAllPosts: "https://saurabh-blog-api.herokuapp.com/api/posts",
+        getPostById: "https://saurabh-blog-api.herokuapp.com/api/posts/:id",
+        createPost: "https://saurabh-blog-api.herokuapp.com/api/posts",
+        updatePost: "https://saurabh-blog-api.herokuapp.com/api/posts/:id",
+        deletePost: "https://saurabh-blog-api.herokuapp.com/api/posts/:id"
+    });
 });
 
 
