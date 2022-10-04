@@ -22,8 +22,8 @@ app.use("/api/users", userRouter);
 app.use("/api/blogs", postRouter);
 
 
-
-app.listen(8080, () => {
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
     database();
-    console.log("Listening on port 8080");
+    console.log(`Listening on port ${PORT}`);
 });
