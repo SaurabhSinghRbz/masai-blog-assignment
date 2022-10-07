@@ -18,11 +18,11 @@ app.get('/', (req, res) => {
         getAllUsers: "https://masai-blog-assignment.herokuapp.com/api/users",
         getUserById: "https://masai-blog-assignment.herokuapp.com/api/users/:id",
         updateUser: "https://masai-blog-assignment.herokuapp.com/api/users/:id",
-        getAllPosts: "https://masai-blog-assignment.herokuapp.com/api/posts",
-        getPostById: "https://masai-blog-assignment.herokuapp.com/api/posts/:id",
-        createPost: "https://masai-blog-assignment.herokuapp.com/api/posts",
-        updatePost: "https://masai-blog-assignment.herokuapp.com/api/posts/:id",
-        deletePost: "https://masai-blog-assignment.herokuapp.com/api/posts/:id"
+        getAllBlogs: "https://masai-blog-assignment.herokuapp.com/api/blogs",
+        getPostById: "https://masai-blog-assignment.herokuapp.com/api/blogs/:id",
+        createBlog: "https://masai-blog-assignment.herokuapp.com/api/blogs",
+        updateBlog: "https://masai-blog-assignment.herokuapp.com/api/blogs/:id",
+        deleteBlog: "https://masai-blog-assignment.herokuapp.com/api/blogs/:id"
     });
 });
 
